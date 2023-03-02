@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    
+    <!-- Agent actions -->
+	<bean id="addAgentAction" class="eu.davidgamez.mas.action.AddAgentAction">
+		<property name="agentSelectionDialog" ref="agentSelectionDialog" />
+	</bean>
+
+	<bean id="agentOrderAction" class="eu.davidgamez.mas.action.AgentOrderAction">
+		<property name="agentOrderDialog" ref="agentOrderDialog" />
+	</bean>
+
+	<bean id="deleteAgentAction" class="eu.davidgamez.mas.action.DeleteAgentAction">
+		<property name="mainPanel" ref="mainPanel" />
+	</bean>
+
+
+	<!-- File actions -->
+	<bean id="exitAction" class="eu.davidgamez.mas.action.ExitAction">
+		<property name="mainFrame" ref="mainFrame" />
+	</bean>
+
+	<bean id="newProjectAction" class="eu.davidgamez.mas.action.NewProjectAction">
+		<property name="mainFrame" ref="mainFrame" />
+	</bean>
+
+	<bean id="openProjectAction" class="eu.davidgamez.mas.action.OpenProjectAction">
+		<property name="mainFrame" ref="mainFrame" />
+		<property name="projectFileChooser" ref="projectFileChooser" />
+		<property name="projectFileManager" ref="projectFileManager" />
+	</bean>
+
+	<bean id="saveProjectAction" class="eu.davidgamez.mas.action.SaveProjectAction">
+		<property name="projectFileManager" ref="projectFileManager" />
+		<property name="saveProjectAsAction" ref="saveProjectAsAction"/>
+	</bean>
+
+	<bean id="saveProjectAsAction" class="eu.davidgamez.mas.action.SaveProjectAsAction">
+		<property name="mainFrame" ref="mainFrame" />
+		<property name="projectFileChooser" ref="projectFileChooser"/>
+		<property name="projectFileManager" ref="projectFileManager"/>
+
+	</bean>
+
+	<!-- MIDI properties actions -->
+	<bean id="bufferPropertiesAction" class="eu.davidgamez.mas.action.BufferPropertiesAction">
+		<property name="bufferPropertiesDialog" ref="bufferPropertiesDialog" />
+	</bean>
+
+	<bean id="devicePropertiesAction" class="eu.davidgamez.mas.action.DevicePropertiesAction">
+		<property name="deviceDialog" ref="deviceDialog" />
+	</bean>
+
+	<bean id="midiSynchronizationAction" class="eu.davidgamez.mas.action.MIDISynchronizationAction">
+		<property name="synchronizationDialog" ref="synchronizationDialog" />
+	</bean>
+
+
+	<!-- OSC properties actions -->
+	<bean id="editOSCDevicesAction" class="eu.davidgamez.mas.action.EditOSCDevicesAction">
+		<property name="deviceDialog" ref="oscDeviceDialog" />
+	</bean>
+
+
+	<!-- Track actions -->
+	<bean id="addTrackAction" class="eu.davidgamez.mas.action.AddTrackAction">
+		<property name="mainPanel" ref="mainPanel" />
+	</bean>
+
+	<bean id="deleteTracksAction" class="eu.davidgamez.mas.action.DeleteTracksAction">
+		<property name="mainPanel" ref="mainPanel" />
+	</bean>
+
+
+	<!-- Transport actions -->
+	<bean id="killNotesAction" class="eu.davidgamez.mas.action.KillNotesAction" />
+
+	<bean id="playAction" class="eu.davidgamez.mas.action.PlayAction" />
+
+	<bean id="stopAction" class="eu.davidgamez.mas.action.StopAction">
+		<property name="masSequencer" ref="masSequencer" />
+	</bean>
+
+
+	<!-- View actions -->
+	<bean id="zoomInAction" class="eu.davidgamez.mas.action.ZoomInAction" />
+	
+	<bean id="zoomOutAction" class="eu.davidgamez.mas.action.ZoomOutAction" />
+
+	<bean id="showMidiEventsAction" class="eu.davidgamez.mas.action.ShowMidiEventsAction">
+		<property name="midiEventsDialog" ref="midiEventsDialog" />
+	</bean>
+	
+</beans>
+	
+	

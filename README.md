@@ -1,21 +1,26 @@
-# flydm
-> opencv and neural net to detect upper body motion and edit sounds on the fly
+# flyd
 
+## Architecture
 ````
-Numpy
-https://numpy.org/devdocs/user/quickstart.html
-````
+Run:
+this is a normie qt interface
+start - starts app
+quit - quits app
+repair - reinstalls midi sounds and dependencies
+install - installs midi sounds and dependencies
 
-````
-OpenCV
-https://docs.opencv.org/4.x/d0/de3/tutorial_py_intro.html
-imgs
-https://docs.opencv.org/4.x/d7/d16/tutorial_py_table_of_contents_core.html
-https://docs.opencv.org/4.x/d2/d96/tutorial_py_table_of_contents_imgproc.html
-https://docs.opencv.org/4.x/db/d27/tutorial_py_table_of_contents_feature2d.html
-https://docs.opencv.org/4.x/d0/d07/tutorial_py_table_of_contents_photo.html
-mlops
-https://docs.opencv.org/4.x/d6/de2/tutorial_py_table_of_contents_ml.html
-https://docs.opencv.org/4.x/db/d28/tutorial_cascade_classifier.html
-https://docs.opencv.org/4.x/dc/d88/tutorial_traincascade.html
+Control:
+this is same as mas
+
+Interface:
+qt gui control with arrows keys and enter
+on top u ve menu to create new agent and stuff
+bottom u ve agents
+similar to mas but cleaner
+call controller mas functions
+
+Vision:
+detect horizontal and vertical movements and click tap
+pass this to interface
+
 ````
