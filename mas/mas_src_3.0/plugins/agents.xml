@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugins>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.barmarker.midi.BarMarker</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.barmarker.gui.BarMarker</properties_panel>
+		<icon_file>BarMarker.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.basicnotes.midi.BasicNotes</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.basicnotes.gui.BasicNotes</properties_panel>
+		<icon_file>BasicNotes.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.copy.midi.CopyAgent</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.copy.gui.CopyPanel</properties_panel>
+		<icon_file>Copy.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.pitchinverter.midi.PitchInverter</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.pitchinverter.gui.PitchInverter</properties_panel>
+		<icon_file>PitchInverter.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.noteemphasis.midi.NoteEmphasis</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.noteemphasis.gui.NoteEmphasis</properties_panel>
+		<icon_file>NoteEmphasis.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.pianoroll.midi.PianoRollAgent</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.pianoroll.gui.PianoRollPanel</properties_panel>
+		<icon_file>PianoRoll.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.pitchshifter.midi.PitchShifter</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.pitchshifter.gui.PitchShifter</properties_panel>
+		<icon_file>PitchShifter.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.prolongnotes.midi.ProlongNotes</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.prolongnotes.gui.ProlongNotes</properties_panel>
+		<icon_file>ProlongNotes.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.randomeater.midi.RandomEater</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.randomeater.gui.RandomEater</properties_panel>
+		<icon_file>RandomEater.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.simplenotes.midi.SimpleNotes</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.simplenotes.gui.SimpleNotes</properties_panel>
+		<icon_file>SimpleNotes.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.simplerandom.midi.SimpleRandom</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.simplerandom.gui.SimpleRandom</properties_panel>
+		<icon_file>SimpleRandom.png</icon_file>
+	</agent>
+	<agent>
+		<midi_agent>eu.davidgamez.mas.agents.timeinverter.midi.TimeInverterAgent</midi_agent>
+		<properties_panel>eu.davidgamez.mas.agents.timeinverter.gui.TimeInverterPanel</properties_panel>
+		<icon_file>TimeInverter.png</icon_file>
+	</agent>
+</plugins>
+
+

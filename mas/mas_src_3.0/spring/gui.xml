@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+	<bean id="mainFrame" class="eu.davidgamez.mas.gui.MainFrame">
+		<property name="mainPanel" ref="mainPanel" />
+		
+		<!-- Actions -->
+		<property name="addAgentAction" ref="addAgentAction" />
+		<property name="addTrackAction" ref="addTrackAction" />
+		<property name="agentOrderAction" ref="agentOrderAction" />
+		<property name="bufferPropertiesAction" ref="bufferPropertiesAction" />
+		<property name="deleteAgentAction" ref="deleteAgentAction" />
+		<property name="deleteTracksAction" ref="deleteTracksAction" />
+		<property name="devicePropertiesAction" ref="devicePropertiesAction" />
+		<property name="editOSCDevicesAction" ref="editOSCDevicesAction" />
+		<property name="exitAction" ref="exitAction" />
+		<property name="killNotesAction" ref="killNotesAction" />
+		<property name="midiSynchronizationAction" ref="midiSynchronizationAction" />
+		<property name="newProjectAction" ref="newProjectAction" />
+		<property name="openProjectAction" ref="openProjectAction" />
+		<property name="playAction" ref="playAction" />
+		<property name="saveProjectAction" ref="saveProjectAction" />
+		<property name="saveProjectAsAction" ref="saveProjectAsAction" />
+		<property name="showMidiEventsAction" ref="showMidiEventsAction" />
+		<property name="stopAction" ref="stopAction" />
+		<property name="zoomInAction" ref="zoomInAction" />
+		<property name="zoomOutAction" ref="zoomOutAction" />
+		
+		<!-- GUI elements on toolbar -->
+		<property name="loadBufferCounter" ref="loadBufferCounter" />
+		<property name="playBufferCounter" ref="playBufferCounter" />
+		<property name="tempoTextField" ref="tempoTextField" />
+		<property name="trackCounter" ref="trackCounter" />
+		
+		<!-- File handling -->
+		<property name="configLoader" ref="configLoader" />
+		<property name="projectFileChooser" ref="projectFileChooser" />
+  	</bean>
+
+	<bean id="mainPanel" class="eu.davidgamez.mas.gui.MainPanel">
+		<property name="mainFrame" ref="mainFrame" />
+		<property name="agentClassLoader_2" ref="agentClassLoader_2" />
+	</bean>
+	
+	
+	<!-- Tool bar graphical elements -->
+	<bean id="loadBufferCounter" class="eu.davidgamez.mas.gui.LoadBufferCounter" />
+	<bean id="playBufferCounter" class="eu.davidgamez.mas.gui.PlayBufferCounter" />
+	<bean id="tempoTextField" class="eu.davidgamez.mas.gui.TempoTextField">
+		<property name="tempoDialog" ref="tempoDialog" />
+	</bean>
+	<bean id="trackCounter" class="eu.davidgamez.mas.gui.TrackCounter" />
+	
+	
+	<!-- Dialogs -->
+	<bean id="agentOrderDialog" class="eu.davidgamez.mas.gui.dialog.AgentOrderDialog">
+		<constructor-arg ref="mainFrame"/>
+	</bean>
+	
+	<bean id="agentSelectionDialog" class="eu.davidgamez.mas.gui.dialog.AgentSelectionDialog">
+		<constructor-arg ref="mainFrame"/>
+		<property name="agentClassLoader_2" ref="agentClassLoader_2" />
+		<property name="mainPanel" ref="mainPanel" />
+	</bean>
+	
+	<bean id="bufferPropertiesDialog" class="eu.davidgamez.mas.gui.dialog.BufferPropertiesDialog">
+		<constructor-arg ref="mainFrame"/>
+	</bean>
+	
+	<bean id="deviceDialog" class="eu.davidgamez.mas.gui.dialog.DeviceDialog">
+		<constructor-arg ref="mainFrame"/>
+	</bean>
+
+	<bean id="midiEventsDialog" class="eu.davidgamez.mas.gui.dialog.MIDIEventsDialog">
+		<constructor-arg ref="mainFrame" />
+	</bean>
+	
+	<bean id="oscDeviceDialog" class="eu.davidgamez.mas.gui.dialog.OSCDeviceDialog">
+		<constructor-arg ref="mainFrame" />
+	</bean>
+
+	<bean id="projectFileChooser" class="javax.swing.JFileChooser" />
+	
+	<bean id="synchronizationDialog" class="eu.davidgamez.mas.gui.dialog.SynchronizationDialog">
+		<constructor-arg ref="mainFrame"/>
+	</bean>
+	
+	<bean id="tempoDialog" class="eu.davidgamez.mas.gui.dialog.TempoDialog">
+		<constructor-arg ref="mainFrame"/>
+	</bean>
+</beans>
