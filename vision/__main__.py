@@ -5,8 +5,6 @@ import sys
 
 from lib.UHR import *
 
-# https://colab.research.google.com/github/googlesamples/mediapipe/blob/main/examples/gesture_recognizer/python/gesture_recognizer.ipynb#scrollTo=Iy4r2_ePylIa
-#
 class MASVision:
     def __init__(self):
         config = {
