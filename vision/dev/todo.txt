@@ -1,0 +1,3 @@
+[ ] universal hand gesture recognition on cpu
+[ ] make compilation script for gpu usage
+[ ] run it on gpu
