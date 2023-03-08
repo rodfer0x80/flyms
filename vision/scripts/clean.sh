@@ -1,2 +1,2 @@
 #!/bin/sh
-rm -rf ./venv ./vision_debug.log ./lib/__pycache__
+rm -rf ./venv ./lib/__pycache__ ./debug.log
