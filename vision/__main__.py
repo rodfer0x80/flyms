@@ -40,6 +40,13 @@ if __name__ == '__main__':
             if results.multi_hand_landmarks:
                 for hand_landmarks in results.multi_hand_landmarks:
                     for tip, lm in enumerate(hand_landmarks.landmark):
+                        # keep track of all fingers for every fram
+                        # if for 30 frames it moves 30% of screen size
+                        # do slide and ignore next 30 frames
+                        # repeat
+                        # cmds: 1 hand left,right,up,down slides
+                        # close hand to select
+                        # 2 hand slide bar
                         h, w, c = image.shape
                         cx, cy = int(lm.x*w), int(lm.y*h)
                         logger.debug(f"{tip}, {cx}, {cy}")
