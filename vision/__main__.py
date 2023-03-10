@@ -20,7 +20,7 @@ class UniversalHandMotionTracker:
         # variables to track frames
         # and drop frames to avoid false positives
         self.frame_count = 0
-        self.frame_limit = 15 # x*2 since we calc the diff travelled
+        self.frame_split = 15 # x*2 since we calc the diff travelled
         self.frame_diff = False
         self.ids = []
         for i in range(0, 21):
@@ -108,10 +108,7 @@ class Vision:
         cap.release()
         return 0
 
-def main():
-    vision = Vision()
-    vision.bootstrap()
-    return 0
-
 if __name__ == '__main__':
-    sys.exit(main())
+    vision = Vision()
+    ret = vision.bootstrap()
+    sys.exit(ret)

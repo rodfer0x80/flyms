@@ -18,13 +18,13 @@ class Interface():
 
     def bootstrap(self):
         window = Window() 
-        return self.app.exec()
-
+        self.app.exec()
+        return 0
 
 def main():
-    iface = Interface()
-    return iface.bootstrap()
 
 
 if __name__ == '__main__':
-    sys.exit(main())
+    iface = Interface()
+    iface.bootstrap()
+    sys.exit(0)
