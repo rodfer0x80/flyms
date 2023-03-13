@@ -1,5 +1,0 @@
-[ ] convert mas to golang make it run in cli ready for socket integration
-[ ] vision running on gpu compile from source and printing basic cmds to
-integrate with socket
-[ ] basic interface ready for socket integration
-...
