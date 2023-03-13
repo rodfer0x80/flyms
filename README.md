@@ -1,6 +1,6 @@
 # flyms
 
 ````
-tinygrad run googls music generator from text promp
-decentralised in users laptop
+gather split sounds and find simple sound too
+train prompt to generate split sounds
 ````
